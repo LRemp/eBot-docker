@@ -5,7 +5,7 @@ if [ ! -f .installed ]; then
 
     git config --global http.sslverify false
 
-    git clone https://github.com/deStrO/eBot-CSGO-Web.git temp
+    git clone https://github.com/LRemp/eBot-CSGO-Web.git temp
 
     cp -n -R temp/* eBot-CSGO-Web && rm -rf temp
 
@@ -26,7 +26,7 @@ if [ ! -f .installed ]; then
     touch .installed
 
     php-fpm
-else
+else``
     echo "eBot Web is already installed. Skipping setup."
     cd eBot-CSGO-Web
     php symfony cc
