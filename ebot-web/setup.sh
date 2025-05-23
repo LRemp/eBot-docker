@@ -26,7 +26,7 @@ if [ ! -f .installed ]; then
     touch .installed
 
     php-fpm
-else``
+else
     echo "eBot Web is already installed. Skipping setup."
     cd eBot-CSGO-Web
     php symfony cc
